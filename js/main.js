@@ -1,9 +1,12 @@
-var $h1 = $('h1');
-var $heading = $('heading');
-var $li = $('.above');
+var $h1Below = $('h1');
+var $h1Above = $('h1');
+var $liAbove = $('.above');
+var $liBelow = $('.below');
 
-$h1.html('Below ground veggies');
+$h1Below.html('Below ground veggies');
 $('body').prepend('<h1>Below ground veggies</h1>');
 
-$heading.html('Adove ground veggies');
-$('body').append('<h1>Adove ground veggies</h1>');
+$h1Above.html('Adove ground veggies');
+$('body').append('<h1>Above ground veggies</h1>');
+
+$('ul').append($liAbove);
